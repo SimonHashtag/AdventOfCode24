@@ -4,7 +4,7 @@ import kotlin.math.abs
 
 class Day1: AdventDay("/day1") {
     override fun printOutput() {
-        val input = input()
+        val input = input().lines()
         val inputLeft = input //
                 .map { line -> line.replace("\\s+\\d+".toRegex(), "") } //
                 .map { str -> str.toInt() }.toList() //

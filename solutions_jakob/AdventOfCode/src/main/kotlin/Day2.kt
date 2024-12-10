@@ -5,7 +5,7 @@ import kotlin.math.abs
 class Day2: AdventDay("/day2") {
 
     override fun printOutput() {
-        val input = input().map { line -> line.split(' ').map {str -> str.toInt() } }.toList()
+        val input = input().lines().map { line -> line.split(' ').map {str -> str.toInt() } }.toList()
         println(input.count { report -> safetyReport(report) })
         println(input.count { report -> dampenedSafetyReport(report) })
     }
