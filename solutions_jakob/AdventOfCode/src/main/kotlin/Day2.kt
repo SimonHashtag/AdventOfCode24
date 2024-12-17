@@ -1,7 +1,5 @@
 package org.example
 
-import kotlin.math.abs
-
 class Day2: AdventDay("/day2") {
 
     override fun printOutput() {

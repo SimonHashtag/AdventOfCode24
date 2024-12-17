@@ -1,8 +1,6 @@
 package org.example
 
-import kotlin.math.abs
-
-class Day4(): AdventDay("/day4") {
+class Day4: AdventDay("/day4") {
 
     override fun printOutput() {
         val matrix = input().lines()
