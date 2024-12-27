@@ -61,8 +61,8 @@ class Day8: AdventDay("/day8") {
     }
 
     private fun greatestCommonDivisor(a:Int, b:Int): Int{
-        if (b == 0) return a;
-        else return (greatestCommonDivisor (b, a % b));
+        return if (b == 0) a;
+        else (greatestCommonDivisor (b, a % b));
     }
 
 }
